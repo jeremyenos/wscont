@@ -169,7 +169,10 @@ BSTORE_PLUGIN="bstore_sos"
 os.environ.setdefault("BSTORE_PLUGIN_PATH", "/opt/ovis/lib64")
 os.environ.setdefault("SET_POS_KEEP_TIME", "3600")
 TIMEZONE=-(6*3600)
-
+DB_HOST = "127.0.0.1"
+DB_PORT = "15306"
+DB_NAME = "ISC"
+NODE_OFFSET = "600000"
 
 try:
     import ldms_cfg
