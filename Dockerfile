@@ -19,6 +19,9 @@ RUN yum update -y && yum group install -y "Development Tools" && \
                    libtool \
                    autogen \
                    git \
+		   readline-devel \
+		   uuid-devel \
+		   libuuid-devel \
                    && pip3 install cython pandas mod_wsgi && \
     yum clean all && \
     mkdir /source # needed for Singularity recipe conversion compatibility
